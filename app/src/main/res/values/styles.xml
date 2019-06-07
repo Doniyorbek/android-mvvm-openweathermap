@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Text.Title" parent="android:TextAppearance">
+        <item name="fontPath">fonts/default_font.ttf</item>
+    </style>
+
+    <style name="Text.Default" parent="android:TextAppearance">
+        <item name="fontPath">fonts/title_font.otf</item>
+    </style>
+
+    <style name="TextStyleTitle">
+        <item name="android:textAppearance">@style/Text.Default</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorTextDivider</item>
+    </style>
+
+    <style name="TextStyleActionBarTitle">
+        <item name="android:textAppearance">@style/Text.Default</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <style name="TextStyleSmall">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorTextDivider</item>
+    </style>
+
+    <style name="TextStyleMiddle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorTextDivider</item>
+    </style>
+
+    <style name="TextStyleBig">
+        <item name="android:textAppearance">@style/Text.Title</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:textColor">@color/colorTextDivider</item>
+    </style>
+
+</resources>

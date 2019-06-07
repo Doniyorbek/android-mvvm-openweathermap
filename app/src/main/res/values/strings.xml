@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">weather</string>
+    <string name="close">Close</string>
+    <string name="add">Add</string>
+    <string name="enter">Enter region name</string>
+    <string name="speed">%.2f km/h</string>
+    <string name="sun_rise">Sun rise %s</string>
+    <string name="sun_set">Sun set %s</string>
+    <string name="pressure">%.2f mmHg</string>
+</resources>

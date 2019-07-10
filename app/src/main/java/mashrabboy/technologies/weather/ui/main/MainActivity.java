@@ -2,6 +2,7 @@ package mashrabboy.technologies.weather.ui.main;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -33,6 +34,7 @@ import mashrabboy.technologies.weather.data.remote.ApiFactory;
 import mashrabboy.technologies.weather.data.remote.model.Region;
 import mashrabboy.technologies.weather.data.remote.model.RegionGroup;
 import mashrabboy.technologies.weather.ui.base.BaseActivity;
+import mashrabboy.technologies.weather.ui.detail.DetailsActivity;
 import mashrabboy.technologies.weather.utils.TinyDB;
 import retrofit2.HttpException;
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
@@ -119,11 +121,11 @@ public class MainActivity extends BaseActivity {
         });
 
         mFABAdd.setOnClickListener(v -> {
-//            Intent mIntent = new Intent(this, ForecastActivity.class);
-//            startActivity(mIntent);
-            AddFragment fragment = AddFragment.newInstance();
-            fragment.setCancelable(false);
-            fragment.show(getSupportFragmentManager(), "kukku");
+            Intent mIntent = new Intent(this, DetailsActivity.class);
+            startActivity(mIntent);
+//            AddFragment fragment = AddFragment.newInstance();
+//            fragment.setCancelable(false);
+//            fragment.show(getSupportFragmentManager(), "kukku");
         });
 
         if (hasCities()) {
